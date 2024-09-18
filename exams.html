@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./exams.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Sản phẩm</h3>
+        <form id="form">
+            <div class="content1">
+                <div class="item">
+                    <label for="">Image Link</label>
+                    <input type="text" placeholder="Nhập đường link ảnh sản phẩm" id="imageLink">
+                </div>
+                <div class="item">
+                    <label for="">Product Name</label>
+                    <input type="text" placeholder="Nhập tên sản phẩm" id="pname">
+                </div>
+                <div class="item">
+                    <label for="">New Price</label>
+                    <input type="number" placeholder="Nhập giá mới sản phẩm" id="newPrice">
+                </div>
+                <div class="item">
+                    <label for="">Old Price</label>
+                    <input type="number" placeholder="Nhập giá cũ sản phẩm" id="OldPrice">
+                </div>
+                <div class="item">
+                    <label for="">Type</label>
+                    <input type="text" placeholder="Nhập loại sản phẩm" id="Type">
+                </div>
+                <div class="item">
+                <button type="button" onclick="Find()">Find</button>
+                </div>
+            </div>
+        </form>
+        <div class="content2" id="content2">
+            <div class="card col-md-4" data-product-code="KO0002">
+                <img src="https://cdn.boo.vn/media/catalog/product/1/_/1.2.21.2.18.006.222.23-60600034-bst-1.jpg" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <p class="card-product-top">Quần jean Nữ <span>KO0002</span></p>
+                    <p class="card-text">
+                        <span class="card-price">269.000<span class="old"><del>720.000</del></span></span>
+                    </p>
+                    <button class="btn btn-primary btn-buy">Mua</button>
+                </div>
+            </div>
+
+            <div class="card col-md-4" data-product-code="KO0003">
+                <img src="https://bizweb.dktcdn.net/100/386/478/products/a21097-3-1665131401079.jpg?v=1665131477300" class="card-img-top"alt="Product Image">
+                <div class="card-body">
+                    <p class="card-product-top">Áo thun Nữ <span>KO0003</span></p>
+                    <p class="card-text">
+                        <span class="card-price">
+                            350.000
+                            <span class="old">
+                              <del>900.000</del>
+                            </span>
+                    </p>
+                    <button class="btn btn-primary btn-buy">Mua</button>
+                </div>
+            </div>
+
+            <div class="card col-md-4" data-product-code="KO0004">
+                <img src="https://zizoou.com/cdn/shop/files/Ao-khoac-jacket-bomber-hoodies-form-rong-oversize-Ao-khoac-trang-7-4_Similar_Extras-ZiZoou-Store_c0f1aa97-ab8c-41c1-ac20-7c72b37e5037.jpg?v=1687077694" class="card-img-top" alt="Product Image">
+                <div class="card-body">
+                    <p class="card-product-top">Áo khoác Nữ <span>KO0004</span></p>
+                    <p class="card-text">
+                        <span class="card-price">369.000<span class="old"><del>620.000</del></span></span>
+                    </p>
+                    <button class="btn btn-primary btn-buy">Mua</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./exam.js"></script>
+</body>
+
+</html>
